@@ -7,18 +7,77 @@ body{
     color: var(---prime-color--);
     background-color:#F5F5F5;
 }
-.list{text-decoration: none;
-
+.list{
+    list-style: none;
 }
-ul{
-    list-style-type: none;
+a{
+    text-decoration: none;
 }
-.title{
-    color: var(--prime-color--);
-}
-.title,
-h2{
-    font-family: 'Roboto';
+.logo{
+    font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
+    color: #2196F3;
+}
+.header-logo{
+    color: #000000;
+}
+.logo .header-logo:hover,
+.logo .header-logo:focus {
+    color: #2196F3
+}
+.logo:hover {
+    color: #000000;
+}
+/* navigator */
+.header-list .link{
+    color:var(--prime-color--);
+}
+.header-list .link:hover,
+.header-list .link:focus{
+    color: #2196F3;
+}
+.header-list .link.current{
+    color: #2196F3;
+}
+.header-contacts .link{
+    color:var(--second-color--);
+}
+.header-contacts .link:hover,
+.header-contacts .link:focus{
+    color:#2196F3
+}
+.hero-title{
+    color: var(---prime-color--);
+}
+/* section */
+.section-title{
+    color: var(--prime-color--);
+}
+
+/* personal list */
+.personal-list .title {
+    color: var(--prime-color--);
+}
+.commandos-list .title{
+    color: var(---prime-color--);
+}
+/* button */
+.button{
+    background-color: #F5F4FA;
+    color: var(---prime-color--); 
+    font-size: 25px;
+    
+}
+.button:hover,
+.button:focus{
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
+.text-btn{
+    margin: 216px 50px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: #FFFFFF;
 }

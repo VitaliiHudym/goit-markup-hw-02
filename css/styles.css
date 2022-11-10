@@ -1,25 +1,48 @@
 /* header */
+body{
+    font-family: 'Roboto' 'Raleway', sans-serif;
+
+}
+a{
+    text-decoration: none;
+}
 header{
-height: 80px;
+    position: absolute;
     width: 1600px;
+    height: 80px;
     left: 0px;
     top: 0px;
-    border-radius: 0px;
     background: #FFFFFF;
 }
-.webstyle{
+ul{
+    list-style-type: none;
+}
+.header-nav{
+    position: absolute;
+    width: 1600px;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+    bottom: 1800px;
+    background: #FFFFFF;
+    border: 1px solid #ECECEC  
+}
+.header-webstyle{
     position: absolute;
     width: 145px;
     height: 31px;
     left: 215px;
     top: 24px;
+    right: 1240px;
+    bottom: 1825px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 31px;
+    text-decoration: none
 }
-.web-style{
+.header-webstyle{
     letter-spacing: 0.03em;
     color: #2196F3;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -29,7 +52,19 @@ height: 80px;
     color: #000000;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.studio{
+.header-webstyle .studio-style:hover{
+    color:#2196F3
+}
+.header-webstyle:hover{
+    color:#000000;
+}
+.header-list{
+    left: 453px;
+    top: 32px;
+    right: 866px;
+    bottom: 1832px;
+}
+.studio-link{
     position: absolute;
     width: 45px;
     height: 16px;
@@ -43,10 +78,10 @@ height: 80px;
     letter-spacing: 0.02em;
     color: #212121;
 }
-.studio:hover{
+.studio-link:hover{
     color: #2196f3;
 }
-.portfolio {
+.portfolio-link{
     position: absolute;
     width: 72px;
     height: 16px;
@@ -61,10 +96,10 @@ height: 80px;
     color: #212121;
 }
 
-.portfolio:hover {
+.portfolio-link:hover {
     color: #2196f3;
 }
-.contacts {
+.contacts-link{
     position: absolute;
     width: 64px;
     height: 16px;
@@ -79,32 +114,18 @@ height: 80px;
     color: #212121;
 }
 
-.contacts:hover {
+.contacts-link:hover {
     color: #2196f3;
 }
-.tel{
-    position: absolute;
-    width: 122px;
-    height: 16px;
-    left: 1263px;
-    top: 32px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.02em;
-    color: #757575;
-}
-.tel:hover {
-    color: #2196f3;
-}
-.mail{
+.header-mail{
     position: absolute;
     width: 135px;
     height: 16px;
     left: 1078px;
     top: 32px;
+    right: 387px;
+    bottom: 1832px;
+
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -114,59 +135,156 @@ height: 80px;
 
     color: #757575;
 }
-.mail:hover {
+.header-mail:hover {
+    color: #2196f3;
+}
+.header-tel{
+    position: absolute;
+    width: 122px;
+    height: 16px;
+    left: 1263px;
+    top: 32px;
+    right: 215px;
+    bottom: 1832px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #757575;
+}
+.header-tel:hover {
     color: #2196f3;
 }
 /* шапка*/
-.cap{
-    border: 1px solid;
-    border-image-source: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    linear-gradient(0deg, #000000, #000000);
+.shapka{
     position: absolute;
     width: 1600px;
     height: 600px;
     left: 0px;
-    top: 80px;
+    top: 80px;  
     background: #2F303A;
 }
-.main-title{
+.sub-title{
     position: absolute;
     width: 696px;
     height: 120px;
     left: 452px;
-    top: 280px;
+    top: 200px;
+}
+.sub-title{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
+    /* or 136% */
+    
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    
     color: #FFFFFF;
 }
-.main-button{
+.sub-button{
     position: absolute;
     width: 216px;
     height: 50px;
     left: 692px;
-    top: 430px;
-    color: #2196F3;
+    top: 400px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    background: #2196F3;
 }
-.title-button{
-    position: absolute;
-    width: 152px;
-    height: 30px;
-    left: 724px;
-    top: 440px;
+.text-btn{
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
     color: #FFFFFF;
 }
+
+
+
+/*підвал footer*/
+footer{
+    position: absolute;
+    width: 1600px;
+    height: 252px;
+    left: 0px;
+    top: 1628px;
+    background: #2F303A;
+}
+.footer-logo{
+    font-family: 'Raleway';
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    font-family: 'Oleo Script';
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    letter-spacing: 0.03em;
+    color: #2196F3
+}
+.footer-logo{
+    top: 1688px;
+    left: 215px;
+}
+.footer-std{
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+.footer-list{
+    left: 215px;
+    top: 1739px;
+}
+.footer-adress{
+    position: absolute;
+    width: 231px;
+    height: 21px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+
+    letter-spacing: 0.03em;
+
+    color: #FFFFFF;
+}
+.footer-mail{
+        position: absolute;
+        width: 231px;
+        height: 21px;
+        left: 133px;
+        top: 233px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        /* or 171% */
+    
+        letter-spacing: 0.03em;
+    
+        color: rgba(255, 255, 255, 0.6);
+}
+/* сторінка  портфоліо*/
+
+.price{
+    position: absolute;
+    width: 1170px;
+    height: 1360px;
+    left: 215px;
+    right: 215px;
+    top: 174px;
+    bottom: 346px;
+} 

@@ -1,11 +1,13 @@
 :root{
     --prime-color--: #212121;
     --second-color--: #757575;
+    --accent-color--:#2196F3;
 }
 body{
-    font-family: 'Roboto' 'Raleway', sans-serif;
+    font-family: Roboto, sans-serif;
     color: var(---prime-color--);
     background-color:#F5F5F5;
+    letter-spacing: 0.03em;
 }
 .list{
     list-style: none;
@@ -15,16 +17,17 @@ a{
 }
 .logo{
     font-family: 'Raleway';
-    font-style: normal;
     font-weight: 700;
-    color: #2196F3;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--accent-color--);
 }
 .header-logo{
     color: #000000;
 }
 .logo .header-logo:hover,
 .logo .header-logo:focus {
-    color: #2196F3
+    color: var(--accent-color--);
 }
 .logo:hover {
     color: #000000;
@@ -32,32 +35,48 @@ a{
 /* navigator */
 .header-list .link{
     color:var(--prime-color--);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 .header-list .link:hover,
 .header-list .link:focus{
-    color: #2196F3;
+    color: var(--accent-color--);
 }
 .header-list .link.current{
-    color: #2196F3;
+    color: var(--accent-color--);
 }
 .header-contacts .link{
     color:var(--second-color--);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
 }
 .header-contacts .link:hover,
 .header-contacts .link:focus{
-    color:#2196F3
+    color: var(--accent-color--);
 }
 .hero-title{
     color: var(---prime-color--);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 }
 /* section */
-.section-title{
-    color: var(--prime-color--);
+.personality{
+    color: #F5F5F5;
 }
 
 /* personal list */
-.personal-list .title {
-    color: var(--prime-color--);
+.personal-list  {
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--second-color--);
 }
 .commandos-list .title{
     color: var(---prime-color--);
@@ -66,18 +85,95 @@ a{
 .button{
     background-color: #F5F4FA;
     color: var(---prime-color--); 
-    font-size: 25px;
-    
+    font-size: 25px;  
 }
 .button:hover,
 .button:focus{
-    background-color: #2196F3;
+    background-color: var(--accent-color--);
     color: #FFFFFF;
 }
-.text-btn{
-    margin: 216px 50px;
-    background: #2196F3;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
+.sub-button{
+    background: var(--accent-color--);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.86;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
     color: #FFFFFF;
+}
+.personal-title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--prime-color--);
+}
+/*  examples comandos */
+.comandos
+.examples{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+.leader-tietle{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+.position{
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    color: var(--second-color--);
+}
+/* index footer */
+.footer-logo{
+    color: #FFFFFF;
+}
+.footer-adress{
+    font-size: 14px;
+    line-height: 1.7;
+    color: #FFFFFF;
+}
+.footer-mail,
+.footer-tel{
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+/* main portfolio */
+.fon{
+    color: #F5F5F5;
+}
+.button{
+    background-color: #F5F4FA;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+}
+ .special-btn{
+    background-color: var(--accent-color--);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    color: #FFFFFF;
+}
+.price-title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--prime-color--);
+}
+.price-filter{
+    font-size: 16px;
+    line-height: 1.9;
+    color: var(--second-color--);
 }

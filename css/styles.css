@@ -2,6 +2,7 @@
     --prime-color--: #212121;
     --second-color--: #757575;
     --accent-color--:#2196F3;
+    --color-type-main--:#FFFFFF;
 }
 body{
     font-family: Roboto, sans-serif;
@@ -90,7 +91,7 @@ a{
 .button:hover,
 .button:focus{
     background-color: var(--accent-color--);
-    color: #FFFFFF;
+    color: var(--color-type-main--);
 }
 .sub-button{
     background: var(--accent-color--);
@@ -137,7 +138,7 @@ a{
 .footer-adress{
     font-size: 14px;
     line-height: 1.7;
-    color: #FFFFFF;
+    color: var(--color-type-main--);
 }
 .footer-mail,
 .footer-tel{
@@ -163,7 +164,7 @@ a{
     font-size: 16px;
     line-height: 1.6;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--color-type-main--);
 }
 .price-title{
     font-weight: 700;

@@ -107,7 +107,9 @@ a{
 /* button */
 .button{
     background-color: var(--btn-portfolio--);
-    color: var(---prime-color--); 
+    color: var(---prime-color--);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
     /* font-size: 25px;   */
 }
 .button:hover,
@@ -203,6 +205,10 @@ a{
     color: var(--accent-color--);
 }
 /* main portfolio */
+.section-port{
+    
+
+}
 .button{
     background-color: var(--btn-portfolio--);
     font-family: inherit;
@@ -210,6 +216,7 @@ a{
     font-size: 16px;
     line-height: 1.6;
     letter-spacing: 0.03em;
+    border-radius: 4px;
     text-align: center;
     cursor: pointer
 }

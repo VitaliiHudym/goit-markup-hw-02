@@ -1,14 +1,18 @@
 :root{
+    --btn-logo--:#000000;
     --prime-color--: #212121;
     --second-color--: #757575;
     --accent-color--:#2196F3;
     --color-type-main--:#FFFFFF;
+    --hero-fon--:#2F303A;
+    --comand-fon--: #F5F5F5;
+    --btn-portfolio--:#F5F4FA;
+    --sub-btn--:#188CE8;
 }
 body{
-    font-family: Roboto, sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: var(---prime-color--);
-    background-color:#F5F5F5;
-    letter-spacing: 0.03em;
+    background-color:var(--color-type-main--);
 }
 .list{
     list-style: none;
@@ -16,22 +20,25 @@ body{
 a{
     text-decoration: none;
 }
+.header-nav{
+    background: var(--color-type-main--);
+}
 .logo{
-    font-family: 'Raleway';
-    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
     font-size: 26px;
     line-height: 1.19;
+    letter-spacing: 0.03em;
     color: var(--accent-color--);
 }
 .header-logo{
-    color: #000000;
+    color: var(--btn-logo--);
 }
 .logo .header-logo:hover,
 .logo .header-logo:focus {
     color: var(--accent-color--);
 }
 .logo:hover {
-    color: #000000;
+    color: var(--btn-logo--);
 }
 /* navigator */
 .header-list .link{
@@ -59,8 +66,11 @@ a{
 .header-contacts .link:focus{
     color: var(--accent-color--);
 }
+.hero{
+    background-color:var(--hero-fon--) ;
+}
 .hero-title{
-    color: var(---prime-color--);
+    color: var(--color-type-main--);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -68,25 +78,37 @@ a{
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
-/* section */
-.personality{
-    color: #F5F5F5;
+/* section and portfolio  */
+.visually-hidden{
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
-
 /* personal list */
 .personal-list  {
     font-size: 14px;
     line-height: 1.14;
+    letter-spacing: 0.03em;
     color: var(--second-color--);
 }
 .commandos-list .title{
     color: var(---prime-color--);
 }
+.comandos-box{
+    background: var(--color-type-main--);
+}
 /* button */
 .button{
-    background-color: #F5F4FA;
+    background-color: var(--btn-portfolio--);
     color: var(---prime-color--); 
-    font-size: 25px;  
+    /* font-size: 25px;   */
 }
 .button:hover,
 .button:focus{
@@ -94,50 +116,79 @@ a{
     color: var(--color-type-main--);
 }
 .sub-button{
-    background: var(--accent-color--);
-    font-weight: 700;
+    font-family: inherit;
     font-size: 16px;
     line-height: 1.86;
-    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: var(--color-type-main--);  
+    background: var(--accent-color--);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.sub-button:hover,
+.sub-button:focus{
+    background: var(--sub-btn--);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 .personal-title{
-    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--prime-color--);
 }
-/*  examples comandos */
-.comandos
-.examples{
-    font-weight: 700;
+.section-job{
     font-size: 36px;
     line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+/*  examples comandos */
+.examples{
+    background: var(--color-type-main--);
+}
+.comand{
+    background: var(--comand-fon--);
+}
+.comandos,
+.examples{
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
     text-align: center;
 }
 .leader-tietle{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
+    letter-spacing: 0.03em;
     text-align: center;
 }
 .position{
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+    letter-spacing: 0.03em;
     color: var(--second-color--);
 }
 /* index footer */
+.address{
+    font-style: normal;
+}
+.footer-down{
+    background: var(--hero-fon--);
+}
 .footer-logo{
-    color: #FFFFFF;
+    color: var(--color-type-main--);
 }
 .footer-adress{
     font-size: 14px;
     line-height: 1.7;
+    letter-spacing: 0.03em;
     color: var(--color-type-main--);
 }
 .footer-mail,
@@ -147,16 +198,20 @@ a{
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
-/* main portfolio */
-.fon{
-    color: #F5F5F5;
+.footer-list .link:hover,
+.footer-list .link:focus{
+    color: var(--accent-color--);
 }
+/* main portfolio */
 .button{
-    background-color: #F5F4FA;
+    background-color: var(--btn-portfolio--);
+    font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.6;
+    letter-spacing: 0.03em;
     text-align: center;
+    cursor: pointer
 }
  .special-btn{
     background-color: var(--accent-color--);
@@ -167,7 +222,6 @@ a{
     color: var(--color-type-main--);
 }
 .price-title{
-    font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -176,5 +230,6 @@ a{
 .price-filter{
     font-size: 16px;
     line-height: 1.9;
+    letter-spacing: 0.03em;
     color: var(--second-color--);
 }
